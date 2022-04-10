@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages= {"com.controller","com.model"})
+@SpringBootApplication(scanBasePackages= {"com.controller","com.model","com.exception","com.exception.handler"})
 @EnableJpaRepositories({"com.model"})
 @EntityScan("com.model")
 public class FlightBookingSystemApplication {
